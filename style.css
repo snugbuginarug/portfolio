@@ -1,0 +1,145 @@
+:root {
+    --black: #121212;
+    --primary: #FF6978;
+    --secondary: #E0BBE4;
+    --accents: #A2C523;
+    --text: #F5F5F5;
+    --muted-text: #AAAAAA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: var(--secondary);
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-links a{
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a:hover{
+    color: var(--secondary);
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0; 
+    height: 2px;
+    background: var(--secondary);
+    transition: width 0.5s ease
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.home-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 5%;
+    padding-top: 80px;
+}
+
+.home-content {
+    max-width: 600px
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.home-content h1 span {
+    background: var(--primary);
+    background-clip: text;
+    color: transparent;
+    /* try gradient and animation later */
+}
+
+.home-content p {
+    font-size: 20px;
+    margin-bottom: 32px;
+    line-height: 1.5;
+    color: var(--muted-text);
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--primary);
+    color: var(--text);
+    border: none;
+    border-radius: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(255, 105, 120, 0.3);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: translateY(-3px);
+    background: var(--accents);
+    /* box-shadow: 0 6px 12px rgba(255, 105, 120, 0.5); */
+    box-shadow: 0 0 10px rgba(162, 197, 35, 0.5)
+}
+
+.profile-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    object-fit: cover;
+    box-shadow: 0 0 60px rgba(180, 151, 189, 0.5);
+}
