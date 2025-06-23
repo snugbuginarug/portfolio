@@ -5,16 +5,16 @@
 <head>
 	<meta name = "viewport" content = "width=device-width, initial scale = 1.0">
 	<title>Portfolio</title>
-	<!--link fonts -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link rel = "stylesheet" href = "style.css">
 </head>
 <body>
 	<nav>
 		<div class = "name">VIDUSHI PANDEY</div>
 		<div class = "nav-links">
+			<a href = "#home">Home</a>
 			<a href = "#about">About</a>
 			<a href = "#skills">Skills</a>
-			
 			<a href = "#contact">Contact</a>
 		</div>
 	</nav>
@@ -37,13 +37,66 @@
 		<div class = "about-content">
 			<div class = about-text>
 				<p>I'm a second-year B.Tech Computer Science student exploring the world of programming, web development, and problem-solving.
-				I enjoy building meaningful projects, learning new technologies, and challenging myself with creative ideas. 
-				Currently, I'm focused on improving my coding skills and contributing to tech communities.
+				I enjoy building meaningful projects, learning new technologies, and challenging myself with creative ideas.</p> 
+				<p>Currently, I'm focused on improving my coding skills and contributing to tech communities.
 				</p>
 			</div>
-			<div class = "skills"></div>
 		</div>
 	</section>
+
+	<section class = "skills" id = "skills">
+		<h2>Skills</h2>
+		<p>Comfortable with HTML/CSS, C++, Python, and basic SQL (queries, filtering, joins); currently learning JavaScript and web development.</p>
+		
+		<h3 class = "skill-group">Frontend</h3>
+		<div class="skill-item">
+    		<span class="skill-icon"><i class="fab fa-html5"></i></span>
+    		<span class="skill-name">HTML</span>
+  		</div>
+		<div class="skill-item">
+    		<span class="skill-icon"><i class="fa-brands fa-css3-alt"></i></span>
+    		<span class="skill-name">CSS</span>
+  		</div>
+		<div class="skill-item">
+    		<span class="skill-icon"><i class="fa-brands fa-js"></i></span>
+    		<span class="skill-name">JavaScript</span>
+  		</div>
+
+		<h3 class = "skill-group">Programming Languages</h3>
+		<div class="skill-item">
+    		<span class="skill-icon"></span>
+    		<span class="skill-name">C++ (DSA and Programming Fundamentals)</span>
+  		</div>
+		<div class="skill-item">
+    		<span class="skill-icon"><i class="fa-brands fa-python"></i></span>
+    		<span class="skill-name">Python (Basic Scripting and Logic)</span>
+  		</div>
+
+		<h3 class = "skill-group">Databases</h3>
+		<div class="skill-item">
+    		<span class="skill-icon"><i class="fa-solid fa-database"></i></span>
+    		<span class="skill-name">SQL (Basic Queries, Joins, Filtering)</span>
+  		</div>
+	</section>
+
+	<section class = "contact" id = "contact">
+		<h2>Contact</h2>
+		<p>If you'd like to get in touch, feel free to drop a message!</p>
+		<form class = "contact-form">
+			<input type = "text" name = "name" placeholder = "Your Name" required>
+			<input type = "email" name = "eamil" placeholder = "Your Email" required>
+			<textarea name = "message" placeholder = "Your Message" required></textarea>
+			<button class = "submit-button" type = "submit">Send Message</button>
+		</form>
+	</section>
+
+	<footer>
+		<div class = "social-links">
+			<a href = "#" class = "social-link"><i class="fa-regular fa-envelope"></i></a>
+			<a href = "#" class = "social-link"><i class="fa-brands fa-github"></i></a>
+			<a href = "#" class = "social-link"><i class="fa-brands fa-linkedin"></i></a>
+		</div>
+	</footer>
 </body>
 	<script src = "script.js"></script>
 </html>
