@@ -3,7 +3,7 @@
 <html lang = "en">
 
 <head>
-	<meta name = "viewport" content = "width=device-width, initial scale = 1.0">
+	<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link rel = "stylesheet" href = "style.css">
@@ -17,6 +17,9 @@
 			<a href = "#skills">Skills</a>
 			<a href = "#contact">Contact</a>
 		</div>
+		<div>
+			<span class = "ham"><i class="fa-solid fa-bars"></i></span>
+		</div>
 	</nav>
 
 	<section class = "home-screen" id = "home">
@@ -28,8 +31,8 @@
 
 		<div class = "profile-container">
 			<div class = "profile-border"></div>
-		</div>
 		<img src = "profile-cropped.JPG" class = "profile-picture">
+		</div>
 	</section>
 
 	<section class = "about" id = "about">
@@ -64,7 +67,7 @@
 
 		<h3 class = "skill-group">Programming Languages</h3>
 		<div class="skill-item">
-    		<span class="skill-icon"></span>
+    		<span class="skill-icon"><i class="fa-solid fa-code"></i></span>
     		<span class="skill-name">C++ (DSA and Programming Fundamentals)</span>
   		</div>
 		<div class="skill-item">
@@ -84,7 +87,7 @@
 		<p>If you'd like to get in touch, feel free to drop a message!</p>
 		<form class = "contact-form">
 			<input type = "text" name = "name" placeholder = "Your Name" required>
-			<input type = "email" name = "eamil" placeholder = "Your Email" required>
+			<input type = "email" name = "email" placeholder = "Your Email" required>
 			<textarea name = "message" placeholder = "Your Message" required></textarea>
 			<button class = "submit-button" type = "submit">Send Message</button>
 		</form>
@@ -92,7 +95,7 @@
 
 	<footer>
 		<div class = "social-links">
-			<a href = "pandey.vidushi2006@gmail.com" class = "social-link"><i class="fa-regular fa-envelope"></i></a>
+			<a href = "mailto:pandey.vidushi2006@gmail.com" class = "social-link"><i class="fa-regular fa-envelope"></i></a>
 			<a href = "https://github.com/snugbuginarug" class = "social-link"><i class="fa-brands fa-github"></i></a>
 			<a href = "https://www.linkedin.com/in/vidushi-pandey-421536325/" class = "social-link"><i class="fa-brands fa-linkedin"></i></a>
 		</div>

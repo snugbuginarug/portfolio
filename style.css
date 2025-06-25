@@ -38,10 +38,10 @@ nav {
     z-index: 100;
 }
 
-.name {
+.name { 
     font-size: 1.8rem;
     font-weight: 700;
-    background: var(--secondary);
+    background: var(--text);
     background-clip: text;
     color: transparent;
 }
@@ -51,8 +51,13 @@ nav {
     gap: 3rem;
 }
 
+.ham {
+    display: none;
+    width: 1.2rem;
+}
+
 .nav-links a{
-    color: var(--secondary);
+    color: var(--text);
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -129,7 +134,6 @@ nav {
 .contact-button:hover {
     transform: translateY(-3px);
     background: var(--accents);
-    /* box-shadow: 0 6px 12px rgba(255, 105, 120, 0.5); */
     box-shadow: 0 0 4px rgba(255, 215, 0, 0.5)
 }
 
@@ -148,7 +152,8 @@ nav {
     border-radius: 50%;
     border: 3px solid transparent;
     object-fit: cover;
-    box-shadow: 0 0 60px rgba(180, 151, 189, 0.5);
+    box-shadow: 0 0 30px rgba(250, 120, 133, 0.7), 0 0 60px rgba(113, 51, 120, 0.5);
+    animation: glow 5s ease-in-out infinite alternate, float 6s ease-in-out infinite;
 }
 
 .about {
@@ -163,7 +168,7 @@ nav {
     left: 0;
     width: 100%;
     height: 5px;
-    background-color: var(--secondary);
+    background-color: var(--muted-text);
 }
 
 .section-title {
@@ -178,17 +183,6 @@ nav {
     background-clip: text; 
     color: transparent;
 }
-
-/* .section-title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    height: 3px;
-    width: 100%;
-    background: var(--primary);
-    border-radius: 2px;
-} */
 
 .about-content {
     display: flex;
@@ -354,4 +348,44 @@ footer {
 .social-link {
     color: var(--muted-text);
     font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .ham {
+        display: block;
+    }
+    
+    .home-screen h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-screen {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 160px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .skills {
+        margin: 0 3%;
+    }
+
+    .profile-container {
+        width: 300px;
+        height: 300px;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .profile-picture {
+        width: 250px;
+        height: 250px;
+    }
 }
